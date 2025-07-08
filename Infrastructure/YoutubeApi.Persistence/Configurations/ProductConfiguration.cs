@@ -26,20 +26,20 @@ namespace YoutubeApi.Persistence.Configurations
                 CreatedDate = DateTime.Now,
                 IsDeleted = false
             };
-            Product product1 = new()
+            Product product2 = new()
             {
-                Id = 1,
+                Id = 2,
                 Title = faker.Commerce.ProductName(),
                 Description = faker.Commerce.ProductDescription(),
-                BrandId = 1,
+                BrandId = 2,
                 Price = faker.Finance.Amount(300, 1000),
                 Discount = faker.Random.Decimal(0, 10),
                 CreatedDate = DateTime.Now,
                 IsDeleted = false
             };
-            Product product2 = new()
+            Product product3 = new()
             {
-                Id = 2,
+                Id = 3,
                 Title = faker.Commerce.ProductName(),
                 Description = faker.Commerce.ProductDescription(),
                 BrandId = 3,
@@ -48,7 +48,7 @@ namespace YoutubeApi.Persistence.Configurations
                 CreatedDate = DateTime.Now,
                 IsDeleted = false
             };
-            builder.HasData(product1, product2);
+            builder.HasData(product1, product2, product3);
         }
     }
 }
