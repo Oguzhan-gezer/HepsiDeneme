@@ -21,6 +21,7 @@ namespace YoutubeApi.Persistence
             // Add other repositories and services as needed
 
             services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
+            services.AddScoped(typeof(IWriteRepository<>), typeof(WriteRepository<>));
         }
     }
 }
